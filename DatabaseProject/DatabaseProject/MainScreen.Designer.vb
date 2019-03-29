@@ -22,16 +22,41 @@ Partial Class MainScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.Welcome = New System.Windows.Forms.Label()
+        Me.UName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
+        '
+        'Welcome
+        '
+        Me.Welcome.AutoSize = True
+        Me.Welcome.Location = New System.Drawing.Point(12, 9)
+        Me.Welcome.Name = "Welcome"
+        Me.Welcome.Size = New System.Drawing.Size(52, 13)
+        Me.Welcome.TabIndex = 0
+        Me.Welcome.Text = "Welcome"
+        '
+        'UName
+        '
+        Me.UName.AutoSize = True
+        Me.UName.Location = New System.Drawing.Point(87, 9)
+        Me.UName.Name = "UName"
+        Me.UName.Size = New System.Drawing.Size(0, 13)
+        Me.UName.TabIndex = 1
         '
         'MainScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.UName)
+        Me.Controls.Add(Me.Welcome)
         Me.Name = "MainScreen"
         Me.Text = "MainScreen"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents Welcome As Label
+    Friend WithEvents UName As Label
 End Class
