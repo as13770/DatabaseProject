@@ -114,15 +114,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Port.resx">
-      <DependentUpon>Port.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Trainscs.resx">
-      <DependentUpon>Trainscs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Trucks.resx">
-      <DependentUpon>Trucks.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -135,15 +126,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Port.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Trainscs.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Trucks.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
