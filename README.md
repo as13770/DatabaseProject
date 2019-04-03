@@ -1,1 +1,0 @@
-# Green Team DatabaseProject
