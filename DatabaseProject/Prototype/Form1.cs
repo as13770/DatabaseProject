@@ -25,7 +25,7 @@ namespace Prototype
         private void searchButton_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
-            categories = db.getCategories(int.Parse(idText.Text));
+            categories = db.getCategories(idText.Text);
 
             categoriesListBox.DataSource = categories;
             categoriesListBox.DisplayMember = "FullInfo";
