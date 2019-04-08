@@ -1,0 +1,11 @@
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\bin\Debug\Prototype.exe.config
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\bin\Debug\Prototype.exe
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\bin\Debug\Prototype.pdb
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\bin\Debug\Dapper.dll
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\bin\Debug\Dapper.xml
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.csprojResolveAssemblyReference.cache
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.Form1.resources
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.Properties.Resources.resources
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.csproj.GenerateResource.Cache
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.exe
+C:\Users\as13770.AD\Source\Repos\DatabaseProject\Prototype\obj\Debug\Prototype.pdb
