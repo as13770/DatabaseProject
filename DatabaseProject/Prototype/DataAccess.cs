@@ -10,7 +10,7 @@ namespace Prototype
 {
     public class DataAccess
     {
-        public List<Category> getCategories(int id)
+        public List<Category> getCategories(string id)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MyGuitarShop")))
             {
