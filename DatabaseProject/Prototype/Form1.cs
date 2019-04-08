@@ -22,11 +22,6 @@ namespace Prototype
             categoriesListBox.DisplayMember = "FullInfo";
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void searchButton_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();

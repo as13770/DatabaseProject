@@ -57,7 +57,6 @@
             this.idLabel.Size = new System.Drawing.Size(63, 13);
             this.idLabel.TabIndex = 2;
             this.idLabel.Text = "Category ID";
-            this.idLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // searchButton
             // 
@@ -67,6 +66,7 @@
             this.searchButton.TabIndex = 3;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // Form1
             // 

@@ -14,7 +14,7 @@ namespace Prototype
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MyGuitarShop")))
             {
-                return connection.Query<Category>("SELECT * FROM CATEGORIES").ToList();
+                return connection.Query<Category>($"SELECT * FROM CATEGORIES WHERE CategoryID={ id }").ToList();
             }
         }
     }
