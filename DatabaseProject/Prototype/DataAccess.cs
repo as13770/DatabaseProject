@@ -14,7 +14,15 @@ namespace Prototype
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("MyGuitarShop")))
             {
-                return connection.Query<Category>($"SELECT * FROM CATEGORIES WHERE CategoryID={ id }").ToList();
+                try
+                {
+                    return connection.Query<Category>($"SELECT * FROM CATEGORIES WHERE CategoryID={ id }").ToList();
+                }
+                catch (System.Data.SqlClient.SqlException e)
+                {
+                    Console.WriteLine("connection to sql server failed");
+                    return null;
+                }
             }
         }
     }
