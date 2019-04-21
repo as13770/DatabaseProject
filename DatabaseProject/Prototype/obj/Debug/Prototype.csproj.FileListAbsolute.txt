@@ -20,3 +20,16 @@ C:\Users\as13770.AD\Source\DatabaseProject\DatabaseProject\Prototype\obj\Debug\P
 C:\Users\as13770.AD\Source\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.csproj.GenerateResource.Cache
 C:\Users\as13770.AD\Source\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.exe
 C:\Users\as13770.AD\Source\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.pdb
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\bin\Debug\Prototype.exe.config
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\bin\Debug\Prototype.exe
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\bin\Debug\Prototype.pdb
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\bin\Debug\Dapper.dll
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\bin\Debug\Dapper.xml
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.csprojAssemblyReference.cache
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.Form1.resources
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.Properties.Resources.resources
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.csproj.GenerateResource.cache
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.csproj.CopyComplete
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.exe
+C:\Users\Andrew\Source\Repos\DatabaseProject\DatabaseProject\Prototype\obj\Debug\Prototype.pdb
