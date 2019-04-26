@@ -58,6 +58,7 @@
             this.labelLocations.Size = new System.Drawing.Size(157, 38);
             this.labelLocations.TabIndex = 0;
             this.labelLocations.Text = "Locations";
+            this.labelLocations.Click += new System.EventHandler(this.labelLocations_Click);
             // 
             // labelLocationID
             // 

@@ -26,5 +26,10 @@ namespace Locations
         {
 
         }
+
+        private void labelLocations_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
