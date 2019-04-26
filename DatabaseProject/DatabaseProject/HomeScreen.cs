@@ -62,12 +62,11 @@ namespace DatabaseProject
             trains.sendHomeScreen(this);
 
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedItem == null) Console.WriteLine("Nothing selected");
-            else
                 switch (comboBox1.SelectedIndex)
                 {
                     case 0://CONTAINERS

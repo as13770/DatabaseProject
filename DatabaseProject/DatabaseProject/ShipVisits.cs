@@ -17,11 +17,34 @@ namespace DatabaseProject
         public ShipVisits()
         {
             InitializeComponent();
+            initializeData();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            initializeData();
+
         }
 
         public void sendHomeScreen(HomeScreen homescreen)
         {
             this.homescreen = homescreen;
         }
+
+        private void initializeData()
+        {
+            DatabaseConnector dt = new DatabaseConnector(this.dataGridView1, "Ship");
+            dt.viewTable();
+            dataGridView1.Refresh();
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
+        }
+
+        private void BackButton_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            homescreen.Show();
+        }
+
+
     }
 }
