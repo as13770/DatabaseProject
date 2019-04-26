@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DatabaseProejct
+namespace DatabaseProject
 {
-    public partial class HomeScreen : Form
+    public partial class HomeForm : Form
     {
-        public HomeScreen()
+        public HomeForm()
         {
             InitializeComponent();
         }
