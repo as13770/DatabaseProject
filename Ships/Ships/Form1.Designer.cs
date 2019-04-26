@@ -331,7 +331,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Ships.Properties.Resources.icons8_close_window_48__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(1047, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(1047, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 49);
             this.pictureBox1.TabIndex = 29;
@@ -427,6 +427,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ships";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Ships_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
