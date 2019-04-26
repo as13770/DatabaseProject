@@ -12,6 +12,8 @@ namespace DatabaseProject
 {
     public partial class Products : Form
     {
+        private HomeScreen homescreen;
+
         public Products()
         {
             InitializeComponent();
@@ -25,6 +27,11 @@ namespace DatabaseProject
 
         }
 
+        public void sendHomeScreen(HomeScreen homescreen)
+        {
+            this.homescreen = homescreen;
+        }
+
         private void initializeData()
         {
             DatabaseConnector dc = new DatabaseConnector(this.dataGridView1, "Products");
@@ -36,7 +43,7 @@ namespace DatabaseProject
         private void BackButton_Click(object sender, EventArgs e)
         {
             Hide();
-            new HomeScreen().Show();
+            homescreen.Show();
         }
     }
 }

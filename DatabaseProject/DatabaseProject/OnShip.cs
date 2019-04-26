@@ -12,9 +12,16 @@ namespace DatabaseProject
 {
     public partial class OnShip : Form
     {
+        private HomeScreen homescreen;
+
         public OnShip()
         {
             InitializeComponent();
+        }
+
+        public void sendHomeScreen(HomeScreen homescreen)
+        {
+            this.homescreen = homescreen;
         }
     }
 }

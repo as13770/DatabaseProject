@@ -12,9 +12,16 @@ namespace DatabaseProject
 {
     public partial class Personnel : Form
     {
+        private HomeScreen homescreen;
+
         public Personnel()
         {
             InitializeComponent();
+        }
+
+        public void sendHomeScreen(HomeScreen homescreen)
+        {
+            this.homescreen = homescreen;
         }
     }
 }
