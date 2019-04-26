@@ -90,7 +90,7 @@
             this.labelOnTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOnTrain.Location = new System.Drawing.Point(353, 9);
             this.labelOnTrain.Name = "labelOnTrain";
-            this.labelOnTrain.Size = new System.Drawing.Size(149, 39);
+            this.labelOnTrain.Size = new System.Drawing.Size(144, 38);
             this.labelOnTrain.TabIndex = 9;
             this.labelOnTrain.Text = "On Train";
             // 
@@ -200,6 +200,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OnTrain";
             this.Text = "OnTrain";
+            this.Load += new System.EventHandler(this.OnTrain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

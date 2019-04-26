@@ -21,5 +21,10 @@ namespace OnTrain
         {
 
         }
+
+        private void OnTrain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
