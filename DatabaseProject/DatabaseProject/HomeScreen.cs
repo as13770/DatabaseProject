@@ -12,7 +12,7 @@ namespace DatabaseProject
 {
     public partial class HomeScreen : Form
     {
-        public HomeScreen(Containers containers, ContainerVersion containerversion, Locations locations, OnShip onship, OnShip ontrain, Personnel personnel, Ports ports, ProdcutManifest productmanifest, Products products, Ships ships, ShippingCompany shippingcompany, ShipVisits shipvisits, Storage storage, Stacks stacks, Trains trains)
+        public HomeScreen(Containers containers, ContainerVersion containerversion, Locations locations, OnShip onship, OnTrain ontrain, Personnel personnel, Ports ports, ProdcutManifest productmanifest, Products products, Ships ships, ShippingCompany shippingcompany, ShipVisits shipvisits, Storage storage, Stacks stacks, Trains trains)
         {
             InitializeComponent();
         }

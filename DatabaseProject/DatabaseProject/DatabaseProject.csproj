@@ -80,12 +80,6 @@
       <DependentUpon>CrewManifest.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseConnector.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +92,23 @@
     <Compile Include="Locations.Designer.cs">
       <DependentUpon>Locations.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnShip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnShip.Designer.cs">
+      <DependentUpon>OnShip.cs</DependentUpon>
+    </Compile>
     <Compile Include="OnTrain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OnTrain.Designer.cs">
       <DependentUpon>OnTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personnel.Designer.cs">
+      <DependentUpon>Personnel.cs</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
@@ -124,11 +130,32 @@
     <Compile Include="Ships.Designer.cs">
       <DependentUpon>Ships.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShipVisits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShipVisits.Designer.cs">
+      <DependentUpon>ShipVisits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stacks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stacks.Designer.cs">
+      <DependentUpon>Stacks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Storage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage.Designer.cs">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains.Designer.cs">
+      <DependentUpon>Trains.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CrewManifest.resx">
       <DependentUpon>CrewManifest.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>

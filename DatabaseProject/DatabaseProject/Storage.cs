@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class Form1 : Form
+    public partial class Storage : Form
     {
-        public Form1()
+        public Storage()
         {
             InitializeComponent();
         }
