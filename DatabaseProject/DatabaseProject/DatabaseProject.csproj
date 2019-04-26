@@ -110,6 +110,18 @@
     <Compile Include="Personnel.Designer.cs">
       <DependentUpon>Personnel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ports.Designer.cs">
+      <DependentUpon>Ports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductManifest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductManifest.Designer.cs">
+      <DependentUpon>ProductManifest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>

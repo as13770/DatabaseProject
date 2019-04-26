@@ -16,7 +16,7 @@ namespace DatabaseProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeScreen());
+            Application.Run(new HomeScreen(new Containers(), new ContainerVersion(), new Locations(), new OnShip(), new OnTrain(), new Personnel(), new Ports(), new ProductManifest(), new Products(), new Ships(), new ShippingCompany(), new ShipVisits(), new Storage(), new Stacks(), new Trains()));
         }
     }
 }
