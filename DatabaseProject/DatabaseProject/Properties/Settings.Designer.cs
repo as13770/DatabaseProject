@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Prototype.Properties
+namespace DatabaseProject.Properties
 {
 
 
