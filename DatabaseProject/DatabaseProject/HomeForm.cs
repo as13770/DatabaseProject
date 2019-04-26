@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace DatabaseProject
 {
-    public partial class HomeForm : Form
+    public partial class Home : Form
     {
-        public HomeForm()
+        public Home()
         {
             InitializeComponent();
+            initializeData();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            initializeData();
+
+        }
+
+        private void initializeData()
+        {
+            DatabaseConnector dc = new DatabaseConnector(this.dataGridView1, "Products");
+            dc.viewTable();
+            dataGridView1.Refresh();
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
     }
 }
