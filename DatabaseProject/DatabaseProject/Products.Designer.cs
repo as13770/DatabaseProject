@@ -1,6 +1,6 @@
 ﻿namespace DatabaseProject
 {
-    partial class Home
+    partial class Products
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             // 
-            // Home
+            // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -127,8 +127,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Tabs);
             this.MaximizeBox = false;
-            this.Name = "Home";
-            this.Text = "Home";
+            this.Name = "Products";
+            this.Text = "Products";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.Tabs.ResumeLayout(false);
             this.View.ResumeLayout(false);
