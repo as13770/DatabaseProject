@@ -16,5 +16,10 @@ namespace ShippingCompany
         {
             InitializeComponent();
         }
+
+        private void ShippingCompany_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
