@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ShippingCompany
+namespace DatabaseProject
 {
-    public partial class ShippingCompany : Form
+    public partial class ContainerVersion : Form
     {
-        public ShippingCompany()
+        public ContainerVersion()
         {
             InitializeComponent();
-        }
-
-        private void ShippingCompany_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

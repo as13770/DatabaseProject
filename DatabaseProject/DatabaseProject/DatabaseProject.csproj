@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Containers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Containers.Designer.cs">
+      <DependentUpon>Containers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerVersion.Designer.cs">
+      <DependentUpon>ContainerVersion.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnector.cs" />
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>

@@ -32,5 +32,11 @@ namespace DatabaseProject
             dataGridView1.Refresh();
             dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new HomeScreen().Show();
+        }
     }
 }

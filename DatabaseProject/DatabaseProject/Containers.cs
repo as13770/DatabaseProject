@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OnTrain
+namespace DatabaseProject
 {
-    public partial class OnTrain : Form
+    public partial class Containers : Form
     {
-        public OnTrain()
+        public Containers()
         {
             InitializeComponent();
-        }
-
-        private void labelTruckModel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OnTrain_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

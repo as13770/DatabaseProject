@@ -37,16 +37,21 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Items.AddRange(new object[] {
-            "Cargo",
-            "Company",
-            "Containers",
-            "Crew",
-            "Dates",
-            "ProductCompany",
-            "Products",
-            "Ship",
-            "Transportation",
-            "Warehouse"});
+            "CONTAINERS",
+            "CONTAINERVERSION",
+            "LOCATIONS",
+            "ONSHIP",
+            "ONTRAIN",
+            "PERSONNEL",
+            "PORTS",
+            "PRODUCTMANIFEST",
+            "PRODUCTS",
+            "SHIPS",
+            "SHIPPINGCOMPANY",
+            "SHIPVISITS",
+            "STORAGE",
+            "STACKS",
+            "TRAINS"});
             this.comboBox1.Location = new System.Drawing.Point(99, 53);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);

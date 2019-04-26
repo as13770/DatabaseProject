@@ -35,6 +35,7 @@
             this.Add = new System.Windows.Forms.TabPage();
             this.Delete = new System.Windows.Forms.TabPage();
             this.Update = new System.Windows.Forms.TabPage();
+            this.BackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Tabs.SuspendLayout();
             this.View.SuspendLayout();
@@ -59,7 +60,7 @@
             // 
             // Refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(6, 3);
+            this.Refresh.Location = new System.Drawing.Point(3, 3);
             this.Refresh.Name = "Refresh";
             this.Refresh.Size = new System.Drawing.Size(75, 23);
             this.Refresh.TabIndex = 1;
@@ -81,6 +82,7 @@
             // 
             // View
             // 
+            this.View.Controls.Add(this.BackButton);
             this.View.Controls.Add(this.dataGridView1);
             this.View.Controls.Add(this.Refresh);
             this.View.Location = new System.Drawing.Point(4, 22);
@@ -119,6 +121,16 @@
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(713, 3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +157,7 @@
         private System.Windows.Forms.TabPage Add;
         private System.Windows.Forms.TabPage Delete;
         private System.Windows.Forms.TabPage Update;
+        private System.Windows.Forms.Button BackButton;
     }
 }
 
