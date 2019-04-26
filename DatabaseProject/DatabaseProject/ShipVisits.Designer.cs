@@ -138,6 +138,7 @@
             this.Controls.Add(this.Tabs);
             this.Name = "ShipVisits";
             this.Text = "ShipVisits";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShipVisits_FormClosed);
             this.Tabs.ResumeLayout(false);
             this.View.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

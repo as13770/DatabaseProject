@@ -45,5 +45,10 @@ namespace DatabaseProject
             Hide();
             homescreen.Show();
         }
+
+        private void Products_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

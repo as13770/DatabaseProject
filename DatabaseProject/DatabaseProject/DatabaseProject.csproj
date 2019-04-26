@@ -166,6 +166,12 @@
     <Compile Include="Trains.Designer.cs">
       <DependentUpon>Trains.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Containers.resx">
+      <DependentUpon>Containers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerVersion.resx">
+      <DependentUpon>ContainerVersion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrewManifest.resx">
       <DependentUpon>CrewManifest.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,8 +181,20 @@
     <EmbeddedResource Include="Locations.resx">
       <DependentUpon>Locations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OnShip.resx">
+      <DependentUpon>OnShip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OnTrain.resx">
       <DependentUpon>OnTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personnel.resx">
+      <DependentUpon>Personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ports.resx">
+      <DependentUpon>Ports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductManifest.resx">
+      <DependentUpon>ProductManifest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
@@ -198,6 +216,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShipVisits.resx">
       <DependentUpon>ShipVisits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stacks.resx">
+      <DependentUpon>Stacks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage.resx">
+      <DependentUpon>Storage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains.resx">
+      <DependentUpon>Trains.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

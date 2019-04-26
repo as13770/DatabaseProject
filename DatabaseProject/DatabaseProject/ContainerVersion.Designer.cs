@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ContainerVersion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "ContainerVersion";
             this.Text = "ContainerVersion";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ContainerVersion_FormClosed);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

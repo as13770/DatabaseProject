@@ -23,5 +23,10 @@ namespace DatabaseProject
         {
             this.homescreen = homescreen;
         }
+
+        private void Ships_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

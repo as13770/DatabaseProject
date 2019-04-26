@@ -32,10 +32,10 @@
             this.Refresh = new System.Windows.Forms.Button();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.View = new System.Windows.Forms.TabPage();
+            this.BackButton = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.TabPage();
             this.Delete = new System.Windows.Forms.TabPage();
             this.Update = new System.Windows.Forms.TabPage();
-            this.BackButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Tabs.SuspendLayout();
             this.View.SuspendLayout();
@@ -93,6 +93,16 @@
             this.View.Text = "View";
             this.View.UseVisualStyleBackColor = true;
             // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(713, 3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
             // Add
             // 
             this.Add.Location = new System.Drawing.Point(4, 22);
@@ -121,16 +131,6 @@
             this.Update.Text = "Update";
             this.Update.UseVisualStyleBackColor = true;
             // 
-            // BackButton
-            // 
-            this.BackButton.Location = new System.Drawing.Point(713, 3);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(75, 23);
-            this.BackButton.TabIndex = 2;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
-            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,9 +138,11 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Tabs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Products";
             this.Text = "Products";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Products_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.Tabs.ResumeLayout(false);
             this.View.ResumeLayout(false);

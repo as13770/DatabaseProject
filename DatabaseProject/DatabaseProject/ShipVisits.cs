@@ -33,7 +33,7 @@ namespace DatabaseProject
 
         private void initializeData()
         {
-            DatabaseConnector dt = new DatabaseConnector(this.dataGridView1, "Ship");
+            DatabaseConnector dt = new DatabaseConnector(this.dataGridView1, "Ships");
             dt.viewTable();
             dataGridView1.Refresh();
             dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
@@ -45,6 +45,9 @@ namespace DatabaseProject
             homescreen.Show();
         }
 
-
+        private void ShipVisits_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
