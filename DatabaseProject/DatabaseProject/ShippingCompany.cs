@@ -21,29 +21,29 @@ namespace DatabaseProject
         {
             tableName = "ShippingCompany";
             InitializeComponent();
-            dc = new DatabaseConnector(this.dataGridView1, tableName);
+            dc = new DatabaseConnector(this.dataGridView1, tableName); //pass the datagrid where the data will be displayed, and the name of the table for querying
             initializeData();
         }
 
-        private void initializeData()
+        private void initializeData() //Displays the current table inside the datagrid
         {
             dc.viewTable();
             dataGridView1.Refresh();
             dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
 
-        private void Refresh_Click(object sender, EventArgs e)
+        private void Refresh_Click(object sender, EventArgs e) //Displays the current table with up-to-date information
         {
             initializeData();
         }
 
-        private void BackButton_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e) //goes back to HomeScreen, which can be navigated to reach other forms
         {
             Hide();
             homescreen.Show();
         }
 
-        private void Add_Click(object sender, EventArgs e)
+        private void Add_Click(object sender, EventArgs e) //Inserts values of the textboxes into the table
         {
             {
                 if (textBox1.Text == "" || textBox2.Text == "")
@@ -73,7 +73,7 @@ namespace DatabaseProject
             }
         }
 
-        private void Delete_Click(object sender, EventArgs e)
+        private void Delete_Click(object sender, EventArgs e) //deletes a row from the table
         {
             if (textBox3.Text == "")
             {
@@ -90,12 +90,12 @@ namespace DatabaseProject
             }
         }
 
-        public void sendHomeScreen(HomeScreen homescreen)
+        public void sendHomeScreen(HomeScreen homescreen) //Gets passed the homescreen instead of creating a new one
         {
             this.homescreen = homescreen;
         }
 
-        private void ShippingCompany_FormClosed(object sender, FormClosedEventArgs e)
+        private void ShippingCompany_FormClosed(object sender, FormClosedEventArgs e) //Application will not close on its own without this
         {
             Application.Exit();
         }

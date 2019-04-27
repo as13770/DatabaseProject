@@ -30,6 +30,7 @@ namespace DatabaseProject
         Trains trains;
         public HomeScreen(Containers containers, ContainerVersion containerversion, Locations locations, OnShip onship, OnTrain ontrain, Personnel personnel, Ports ports, ProductManifest productmanifest, Products products, Ships ships, ShippingCompany shippingcompany, ShipVisits shipvisits, Storage storage, Stacks stacks, Trains trains)
         {
+            //Gets passed an object of every form so no memory is wasted
             this.containers = containers;
             containers.sendHomeScreen(this);
             this.containerversion = containerversion;
@@ -65,7 +66,7 @@ namespace DatabaseProject
             comboBox1.SelectedIndex = 0;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //Select which form you want to see
         {
                 switch (comboBox1.SelectedIndex)
                 {

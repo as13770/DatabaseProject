@@ -12,18 +12,19 @@ namespace DatabaseProject
 {
     public class DatabaseConnector
     {
+        //ConnectionString to AWS database
         String connectionString = "Server=databasesystemsproject.cy9rjwfchpnj.us-east-1.rds.amazonaws.com,1433;Database=SavannahPort;User Id=admin;Password=mypassword;";
         String queryString;
         DataGridView currentview;
         String currentTable;
 
-        public DatabaseConnector(DataGridView dataGridViewer, String table)
+        public DatabaseConnector(DataGridView dataGridViewer, String table) //gets passed the datagrid of which to display the data, and the name of the sql table
         {
             currentview = dataGridViewer;
             currentTable = table;
         }
 
-        public void viewTable()
+        public void viewTable() //Fills the datagrid with the SELECT * statement
         {
             queryString = "SELECT * FROM " + currentTable;
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -38,12 +39,7 @@ namespace DatabaseProject
             }
         }
 
-        public void deleteData(String query)
-        {
-            queryString = query;
-        }
-
-        public int addData(String query, SqlParameter[] parameters)
+        public int addData(String query, SqlParameter[] parameters) //Adds values to the table using SqlParameters to prevent Sql Injection
         {
             try
             {
@@ -70,7 +66,7 @@ namespace DatabaseProject
             
         }
 
-        public int deleteData(String query, SqlParameter parameter)
+        public int deleteData(String query, SqlParameter parameter) //Deletes values from the table using SqlParameters to prevent Sql Injection
         {
             queryString = query;
             using (SqlConnection connection = new SqlConnection(connectionString))
