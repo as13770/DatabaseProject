@@ -29,7 +29,7 @@ namespace DatabaseProject
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                SqlCommand sqlquery = new SqlCommand(queryString, connection);          
+                SqlCommand sqlquery = new SqlCommand(queryString, connection);
                 SqlDataAdapter read = new SqlDataAdapter(sqlquery);
                 DataSet ds = new DataSet();
                 read.Fill(ds);
@@ -56,6 +56,19 @@ namespace DatabaseProject
                     sqlquery.Parameters.Add(parameters[i]);
                 }
 
+                sqlquery.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+
+        public void deleteData(String query, SqlParameter parameter)
+        {
+            queryString = query;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand sqlquery = new SqlCommand(queryString, connection);
+                sqlquery.Parameters.Add(parameter);
                 sqlquery.ExecuteNonQuery();
                 connection.Close();
             }

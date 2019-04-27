@@ -15,11 +15,13 @@ namespace DatabaseProject
     {
         private HomeScreen homescreen;
         DatabaseConnector dc;
+        String tableName;
 
         public Products()
         {
+            tableName = "Products";
             InitializeComponent();
-            dc = new DatabaseConnector(this.dataGridView1, "Products");
+            dc = new DatabaseConnector(this.dataGridView1, tableName);
             initializeData();
 
         }
@@ -57,7 +59,7 @@ namespace DatabaseProject
             else
             {
                 AddStatus.Text = "";
-                String query = "INSERT INTO PRODUCTS (ProductID, Name) ";
+                String query = "INSERT INTO "+tableName+" (ProductID, Name) ";
                 query += "VALUES (@ProductID, @Name);";
                 SqlParameter[] parameters = { new SqlParameter("@ProductID", textBox1.Text), new SqlParameter("@Name", textBox2.Text) };
                 dc.addData(query, parameters);
@@ -68,9 +70,27 @@ namespace DatabaseProject
             }
         }
 
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            if(textBox3.Text == "")
+            {
+                DeleteStatus.Text = "Missing Information";
+            }
+            else
+            {
+                DeleteStatus.Text = "";
+                String query = "DELETE FROM " + tableName + " WHERE ProductID = @ProductID";
+                SqlParameter parameter = new SqlParameter("@ProductID", textBox3.Text);
+                dc.deleteData(query, parameter);
+                textBox3.Text = "";
+                initializeData();
+            }
+        }
+
         private void Products_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
+
     }
 }
