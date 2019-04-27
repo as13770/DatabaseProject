@@ -28,196 +28,298 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonClear = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.labelSearch = new System.Windows.Forms.Label();
+            this.View = new System.Windows.Forms.TabPage();
+            this.BackButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelOnTrain = new System.Windows.Forms.Label();
-            this.textBoxTrainID = new System.Windows.Forms.TextBox();
-            this.labelTrainID = new System.Windows.Forms.Label();
-            this.textBoxContainerID = new System.Windows.Forms.TextBox();
-            this.labelContainerID = new System.Windows.Forms.Label();
+            this.Refresh = new System.Windows.Forms.Button();
+            this.Update = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DeleteStatus = new System.Windows.Forms.Label();
+            this.Delete = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AddStatus = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
+            this.Tabs = new System.Windows.Forms.TabControl();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.View.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Update.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.Tabs.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonClear
+            // View
             // 
-            this.buttonClear.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.ForeColor = System.Drawing.Color.White;
-            this.buttonClear.Location = new System.Drawing.Point(562, 534);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(100, 28);
-            this.buttonClear.TabIndex = 37;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.UseVisualStyleBackColor = false;
+            this.View.Controls.Add(this.BackButton);
+            this.View.Controls.Add(this.dataGridView1);
+            this.View.Controls.Add(this.Refresh);
+            this.View.Location = new System.Drawing.Point(4, 22);
+            this.View.Name = "View";
+            this.View.Padding = new System.Windows.Forms.Padding(3);
+            this.View.Size = new System.Drawing.Size(780, 438);
+            this.View.TabIndex = 0;
+            this.View.Text = "View";
+            this.View.UseVisualStyleBackColor = true;
             // 
-            // buttonUpdate
+            // BackButton
             // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(392, 534);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(100, 28);
-            this.buttonUpdate.TabIndex = 36;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Crimson;
-            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(159, 534);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(100, 28);
-            this.buttonDelete.TabIndex = 35;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(1, 534);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(74, 28);
-            this.buttonAdd.TabIndex = 34;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            // 
-            // textBoxSearch
-            // 
-            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(296, 178);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(196, 28);
-            this.textBoxSearch.TabIndex = 33;
-            // 
-            // labelSearch
-            // 
-            this.labelSearch.AutoSize = true;
-            this.labelSearch.BackColor = System.Drawing.Color.Transparent;
-            this.labelSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearch.Location = new System.Drawing.Point(155, 182);
-            this.labelSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSearch.Name = "labelSearch";
-            this.labelSearch.Size = new System.Drawing.Size(70, 24);
-            this.labelSearch.TabIndex = 32;
-            this.labelSearch.Text = "Search";
+            this.BackButton.Location = new System.Drawing.Point(702, 3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(159, 242);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(332, 265);
-            this.dataGridView1.TabIndex = 31;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.ShowCellErrors = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.ShowRowErrors = false;
+            this.dataGridView1.Size = new System.Drawing.Size(774, 409);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // labelOnTrain
+            // Refresh
             // 
-            this.labelOnTrain.AutoSize = true;
-            this.labelOnTrain.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOnTrain.Location = new System.Drawing.Point(254, 7);
-            this.labelOnTrain.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelOnTrain.Name = "labelOnTrain";
-            this.labelOnTrain.Size = new System.Drawing.Size(119, 31);
-            this.labelOnTrain.TabIndex = 30;
-            this.labelOnTrain.Text = "On Train";
+            this.Refresh.Location = new System.Drawing.Point(3, 3);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(75, 23);
+            this.Refresh.TabIndex = 1;
+            this.Refresh.Text = "Refresh";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
-            // textBoxTrainID
+            // Update
             // 
-            this.textBoxTrainID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTrainID.Location = new System.Drawing.Point(296, 126);
-            this.textBoxTrainID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxTrainID.Name = "textBoxTrainID";
-            this.textBoxTrainID.Size = new System.Drawing.Size(196, 28);
-            this.textBoxTrainID.TabIndex = 29;
+            this.Update.Controls.Add(this.label2);
+            this.Update.Controls.Add(this.label1);
+            this.Update.Controls.Add(this.groupBox2);
+            this.Update.Controls.Add(this.groupBox1);
+            this.Update.Location = new System.Drawing.Point(4, 22);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(780, 438);
+            this.Update.TabIndex = 3;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
             // 
-            // labelTrainID
+            // label2
             // 
-            this.labelTrainID.AutoSize = true;
-            this.labelTrainID.BackColor = System.Drawing.Color.Transparent;
-            this.labelTrainID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTrainID.Location = new System.Drawing.Point(155, 130);
-            this.labelTrainID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelTrainID.Name = "labelTrainID";
-            this.labelTrainID.Size = new System.Drawing.Size(75, 24);
-            this.labelTrainID.TabIndex = 28;
-            this.labelTrainID.Text = "Train ID";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(547, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Delete";
             // 
-            // textBoxContainerID
+            // label1
             // 
-            this.textBoxContainerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContainerID.Location = new System.Drawing.Point(296, 66);
-            this.textBoxContainerID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxContainerID.Name = "textBoxContainerID";
-            this.textBoxContainerID.Size = new System.Drawing.Size(196, 28);
-            this.textBoxContainerID.TabIndex = 27;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.Location = new System.Drawing.Point(169, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Add";
             // 
-            // labelContainerID
+            // groupBox2
             // 
-            this.labelContainerID.AutoSize = true;
-            this.labelContainerID.BackColor = System.Drawing.Color.Transparent;
-            this.labelContainerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContainerID.Location = new System.Drawing.Point(155, 70);
-            this.labelContainerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelContainerID.Name = "labelContainerID";
-            this.labelContainerID.Size = new System.Drawing.Size(113, 24);
-            this.labelContainerID.TabIndex = 26;
-            this.labelContainerID.Text = "Container ID";
+            this.groupBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox2.Controls.Add(this.DeleteStatus);
+            this.groupBox2.Controls.Add(this.Delete);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Location = new System.Drawing.Point(398, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(372, 360);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // DeleteStatus
+            // 
+            this.DeleteStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeleteStatus.Location = new System.Drawing.Point(75, 301);
+            this.DeleteStatus.Name = "DeleteStatus";
+            this.DeleteStatus.Size = new System.Drawing.Size(229, 25);
+            this.DeleteStatus.TabIndex = 6;
+            this.DeleteStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Delete
+            // 
+            this.Delete.BackColor = System.Drawing.Color.Silver;
+            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.Location = new System.Drawing.Point(75, 200);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(229, 64);
+            this.Delete.TabIndex = 5;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = false;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(204, 53);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 31);
+            this.textBox3.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(70, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 25);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "trainid";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.AddStatus);
+            this.groupBox1.Controls.Add(this.Add);
+            this.groupBox1.Location = new System.Drawing.Point(10, 67);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(369, 360);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // AddStatus
+            // 
+            this.AddStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.AddStatus.Location = new System.Drawing.Point(67, 301);
+            this.AddStatus.Name = "AddStatus";
+            this.AddStatus.Size = new System.Drawing.Size(229, 25);
+            this.AddStatus.TabIndex = 5;
+            this.AddStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.Color.Silver;
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.Location = new System.Drawing.Point(67, 200);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(229, 64);
+            this.Add.TabIndex = 4;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // Tabs
+            // 
+            this.Tabs.Controls.Add(this.View);
+            this.Tabs.Controls.Add(this.Update);
+            this.Tabs.Location = new System.Drawing.Point(-2, 0);
+            this.Tabs.Name = "Tabs";
+            this.Tabs.SelectedIndex = 0;
+            this.Tabs.Size = new System.Drawing.Size(788, 464);
+            this.Tabs.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(190, 93);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(120, 31);
+            this.textBox2.TabIndex = 9;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(190, 56);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 31);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(53, 96);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "versionid";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(53, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 25);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "trainid";
             // 
             // OnTrain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 576);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonUpdate);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.labelSearch);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.labelOnTrain);
-            this.Controls.Add(this.textBoxTrainID);
-            this.Controls.Add(this.labelTrainID);
-            this.Controls.Add(this.textBoxContainerID);
-            this.Controls.Add(this.labelContainerID);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.Tabs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "OnTrain";
             this.Text = "OnTrain";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.OnTrain_FormClosed);
+            this.View.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Update.ResumeLayout(false);
+            this.Update.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.Tabs.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Label labelSearch;
+
+        private System.Windows.Forms.TabPage View;
+        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label labelOnTrain;
-        private System.Windows.Forms.TextBox textBoxTrainID;
-        private System.Windows.Forms.Label labelTrainID;
-        private System.Windows.Forms.TextBox textBoxContainerID;
-        private System.Windows.Forms.Label labelContainerID;
+        private System.Windows.Forms.Button Refresh;
+        private System.Windows.Forms.TabPage Update;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label DeleteStatus;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label AddStatus;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.TabControl Tabs;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }

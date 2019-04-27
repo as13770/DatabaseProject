@@ -32,16 +32,6 @@ namespace DatabaseProject
             dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
 
-        public void sendHomeScreen(HomeScreen homescreen)
-        {
-            this.homescreen = homescreen;
-        }
-
-        private void ShippingCompany_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void Refresh_Click(object sender, EventArgs e)
         {
             initializeData();
@@ -66,10 +56,18 @@ namespace DatabaseProject
                     String query = "INSERT INTO " + tableName + " (CompanyID, CompanyName) ";
                     query += "VALUES (@CompanyID, @CompanyName);";
                     SqlParameter[] parameters = { new SqlParameter("@CompanyID", textBox1.Text), new SqlParameter("@CompanyName", textBox2.Text) };
-                    AddStatus.Text = "Rows changed: " + dc.addData(query, parameters);
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    initializeData();
+                    int returnedNumber = dc.addData(query, parameters);
+                    if (returnedNumber == -1)
+                    {
+                        AddStatus.Text = "Input Error";
+                    }
+                    else
+                    {
+                        AddStatus.Text = "Rows changed: " + returnedNumber;
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        initializeData();
+                    }
 
                 }
             }
@@ -90,6 +88,16 @@ namespace DatabaseProject
                 textBox3.Text = "";
                 initializeData();
             }
+        }
+
+        public void sendHomeScreen(HomeScreen homescreen)
+        {
+            this.homescreen = homescreen;
+        }
+
+        private void ShippingCompany_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

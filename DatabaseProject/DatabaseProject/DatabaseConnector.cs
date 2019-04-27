@@ -45,22 +45,28 @@ namespace DatabaseProject
 
         public int addData(String query, SqlParameter[] parameters)
         {
-
-            queryString = query;
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            try
             {
-                connection.Open();
-                SqlCommand sqlquery = new SqlCommand(queryString, connection);
-                for (int i = 0; i < parameters.Length; i++)
+                queryString = query;
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    sqlquery.Parameters.Add(parameters[i]);
+                    connection.Open();
+                    SqlCommand sqlquery = new SqlCommand(queryString, connection);
+                    for (int i = 0; i < parameters.Length; i++)
+                    {
+                        sqlquery.Parameters.Add(parameters[i]);
+                    }
+
+                    int changed = sqlquery.ExecuteNonQuery();
+                    connection.Close();
+                    return changed;
                 }
-
-                int changed = sqlquery.ExecuteNonQuery();
-                connection.Close();
-                return changed;
             }
-
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return -1;
+            }
             
         }
 

@@ -62,10 +62,18 @@ namespace DatabaseProject
                 String query = "INSERT INTO "+tableName+" (ProductID, Name) ";
                 query += "VALUES (@ProductID, @Name);";
                 SqlParameter[] parameters = { new SqlParameter("@ProductID", textBox1.Text), new SqlParameter("@Name", textBox2.Text) };
-                AddStatus.Text = "Rows changed: " + dc.addData(query, parameters);
-                textBox1.Text = "";
-                textBox2.Text = "";
-                initializeData();
+                int returnedNumber = dc.addData(query, parameters);
+                if (returnedNumber == -1)
+                {
+                    AddStatus.Text = "Input Error";
+                }
+                else
+                {
+                    AddStatus.Text = "Rows changed: " + returnedNumber;
+                    textBox1.Text = "";
+                    textBox2.Text = "";
+                    initializeData();
+                }
 
             }
         }

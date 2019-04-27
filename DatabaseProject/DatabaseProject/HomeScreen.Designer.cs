@@ -52,15 +52,15 @@
             "STORAGE",
             "STACKS",
             "TRAINS"});
-            this.comboBox1.Location = new System.Drawing.Point(99, 53);
+            this.comboBox1.Location = new System.Drawing.Point(89, 61);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 24);
+            this.label1.Location = new System.Drawing.Point(99, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(181, 13);
             this.label1.TabIndex = 2;
@@ -68,9 +68,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(121, 80);
+            this.button1.Location = new System.Drawing.Point(139, 97);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 3;
             this.button1.Text = "View Table";
             this.button1.UseVisualStyleBackColor = true;
@@ -80,10 +80,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 129);
+            this.ClientSize = new System.Drawing.Size(384, 161);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "HomeScreen";
             this.Text = "HomeScreen";
             this.ResumeLayout(false);
