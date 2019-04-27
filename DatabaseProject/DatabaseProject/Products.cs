@@ -62,7 +62,7 @@ namespace DatabaseProject
                 String query = "INSERT INTO "+tableName+" (ProductID, Name) ";
                 query += "VALUES (@ProductID, @Name);";
                 SqlParameter[] parameters = { new SqlParameter("@ProductID", textBox1.Text), new SqlParameter("@Name", textBox2.Text) };
-                dc.addData(query, parameters);
+                AddStatus.Text = "Rows changed: " + dc.addData(query, parameters);
                 textBox1.Text = "";
                 textBox2.Text = "";
                 initializeData();
@@ -81,7 +81,7 @@ namespace DatabaseProject
                 DeleteStatus.Text = "";
                 String query = "DELETE FROM " + tableName + " WHERE ProductID = @ProductID";
                 SqlParameter parameter = new SqlParameter("@ProductID", textBox3.Text);
-                dc.deleteData(query, parameter);
+                DeleteStatus.Text = "Rows changed: " + dc.deleteData(query, parameter);
                 textBox3.Text = "";
                 initializeData();
             }

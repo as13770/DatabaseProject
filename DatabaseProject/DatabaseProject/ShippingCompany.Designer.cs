@@ -28,197 +28,299 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonClear = new System.Windows.Forms.Button();
-            this.buttonUpdate = new System.Windows.Forms.Button();
-            this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.AddStatus = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.DeleteStatus = new System.Windows.Forms.Label();
+            this.Delete = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Update = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.View = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBoxSearch = new System.Windows.Forms.TextBox();
-            this.labelSearch = new System.Windows.Forms.Label();
-            this.textBoxCompanyName = new System.Windows.Forms.TextBox();
-            this.labelCompanyName = new System.Windows.Forms.Label();
-            this.textBoxCompanyID = new System.Windows.Forms.TextBox();
-            this.labelCompanyID = new System.Windows.Forms.Label();
-            this.labelShippingCompany = new System.Windows.Forms.Label();
+            this.Refresh = new System.Windows.Forms.Button();
+            this.Tabs = new System.Windows.Forms.TabControl();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.Update.SuspendLayout();
+            this.View.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Tabs.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonClear
+            // AddStatus
             // 
-            this.buttonClear.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.buttonClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClear.ForeColor = System.Drawing.Color.White;
-            this.buttonClear.Location = new System.Drawing.Point(506, 458);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(100, 28);
-            this.buttonClear.TabIndex = 41;
-            this.buttonClear.Text = "Clear";
-            this.buttonClear.UseVisualStyleBackColor = false;
+            this.AddStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.AddStatus.Location = new System.Drawing.Point(67, 301);
+            this.AddStatus.Name = "AddStatus";
+            this.AddStatus.Size = new System.Drawing.Size(229, 25);
+            this.AddStatus.TabIndex = 5;
+            this.AddStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // buttonUpdate
+            // Add
             // 
-            this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(346, 458);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(100, 28);
-            this.buttonUpdate.TabIndex = 40;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.Add.BackColor = System.Drawing.Color.Silver;
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.Location = new System.Drawing.Point(67, 200);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(229, 64);
+            this.Add.TabIndex = 4;
+            this.Add.Text = "Add";
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // buttonDelete
+            // textBox2
             // 
-            this.buttonDelete.BackColor = System.Drawing.Color.Crimson;
-            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(142, 458);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(100, 28);
-            this.buttonDelete.TabIndex = 39;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(196, 108);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 31);
+            this.textBox2.TabIndex = 3;
             // 
-            // buttonAdd
+            // textBox1
             // 
-            this.buttonAdd.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(5, 458);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(74, 28);
-            this.buttonAdd.TabIndex = 38;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(196, 45);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 31);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(62, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "ProductID";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.Controls.Add(this.AddStatus);
+            this.groupBox1.Controls.Add(this.Add);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(10, 67);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(369, 360);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(62, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(68, 25);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Name";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Gainsboro;
+            this.groupBox2.Controls.Add(this.DeleteStatus);
+            this.groupBox2.Controls.Add(this.Delete);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Location = new System.Drawing.Point(398, 67);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(372, 360);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            // 
+            // DeleteStatus
+            // 
+            this.DeleteStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeleteStatus.Location = new System.Drawing.Point(75, 301);
+            this.DeleteStatus.Name = "DeleteStatus";
+            this.DeleteStatus.Size = new System.Drawing.Size(229, 25);
+            this.DeleteStatus.TabIndex = 6;
+            this.DeleteStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Delete
+            // 
+            this.Delete.BackColor = System.Drawing.Color.Silver;
+            this.Delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.Location = new System.Drawing.Point(75, 200);
+            this.Delete.Name = "Delete";
+            this.Delete.Size = new System.Drawing.Size(229, 64);
+            this.Delete.TabIndex = 5;
+            this.Delete.Text = "Delete";
+            this.Delete.UseVisualStyleBackColor = false;
+            this.Delete.Click += new System.EventHandler(this.Delete_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(204, 53);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 31);
+            this.textBox3.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(70, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 25);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "ProductID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(547, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Delete";
+            // 
+            // Update
+            // 
+            this.Update.Controls.Add(this.label2);
+            this.Update.Controls.Add(this.label1);
+            this.Update.Controls.Add(this.groupBox2);
+            this.Update.Controls.Add(this.groupBox1);
+            this.Update.Location = new System.Drawing.Point(4, 22);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(780, 438);
+            this.Update.TabIndex = 3;
+            this.Update.Text = "Update";
+            this.Update.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.label1.Location = new System.Drawing.Point(169, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Add";
+            // 
+            // BackButton
+            // 
+            this.BackButton.Location = new System.Drawing.Point(702, 3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(75, 23);
+            this.BackButton.TabIndex = 2;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // View
+            // 
+            this.View.Controls.Add(this.BackButton);
+            this.View.Controls.Add(this.dataGridView1);
+            this.View.Controls.Add(this.Refresh);
+            this.View.Location = new System.Drawing.Point(4, 22);
+            this.View.Name = "View";
+            this.View.Padding = new System.Windows.Forms.Padding(3);
+            this.View.Size = new System.Drawing.Size(780, 438);
+            this.View.TabIndex = 0;
+            this.View.Text = "View";
+            this.View.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(142, 251);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 27);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(304, 193);
-            this.dataGridView1.TabIndex = 36;
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.ShowCellErrors = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.ShowRowErrors = false;
+            this.dataGridView1.Size = new System.Drawing.Size(774, 409);
+            this.dataGridView1.TabIndex = 0;
             // 
-            // textBoxSearch
+            // Refresh
             // 
-            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(282, 202);
-            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(165, 28);
-            this.textBoxSearch.TabIndex = 35;
+            this.Refresh.Location = new System.Drawing.Point(3, 3);
+            this.Refresh.Name = "Refresh";
+            this.Refresh.Size = new System.Drawing.Size(75, 23);
+            this.Refresh.TabIndex = 1;
+            this.Refresh.Text = "Refresh";
+            this.Refresh.UseVisualStyleBackColor = true;
+            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
-            // labelSearch
+            // Tabs
             // 
-            this.labelSearch.AutoSize = true;
-            this.labelSearch.BackColor = System.Drawing.Color.Transparent;
-            this.labelSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearch.Location = new System.Drawing.Point(138, 202);
-            this.labelSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelSearch.Name = "labelSearch";
-            this.labelSearch.Size = new System.Drawing.Size(70, 24);
-            this.labelSearch.TabIndex = 34;
-            this.labelSearch.Text = "Search";
-            // 
-            // textBoxCompanyName
-            // 
-            this.textBoxCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCompanyName.Location = new System.Drawing.Point(282, 137);
-            this.textBoxCompanyName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxCompanyName.Name = "textBoxCompanyName";
-            this.textBoxCompanyName.Size = new System.Drawing.Size(165, 28);
-            this.textBoxCompanyName.TabIndex = 33;
-            // 
-            // labelCompanyName
-            // 
-            this.labelCompanyName.AutoSize = true;
-            this.labelCompanyName.BackColor = System.Drawing.Color.Transparent;
-            this.labelCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCompanyName.Location = new System.Drawing.Point(138, 137);
-            this.labelCompanyName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCompanyName.Name = "labelCompanyName";
-            this.labelCompanyName.Size = new System.Drawing.Size(147, 24);
-            this.labelCompanyName.TabIndex = 32;
-            this.labelCompanyName.Text = "Company Name";
-            // 
-            // textBoxCompanyID
-            // 
-            this.textBoxCompanyID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCompanyID.Location = new System.Drawing.Point(282, 76);
-            this.textBoxCompanyID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBoxCompanyID.Name = "textBoxCompanyID";
-            this.textBoxCompanyID.Size = new System.Drawing.Size(165, 28);
-            this.textBoxCompanyID.TabIndex = 31;
-            // 
-            // labelCompanyID
-            // 
-            this.labelCompanyID.AutoSize = true;
-            this.labelCompanyID.BackColor = System.Drawing.Color.Transparent;
-            this.labelCompanyID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCompanyID.Location = new System.Drawing.Point(138, 76);
-            this.labelCompanyID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelCompanyID.Name = "labelCompanyID";
-            this.labelCompanyID.Size = new System.Drawing.Size(113, 24);
-            this.labelCompanyID.TabIndex = 30;
-            this.labelCompanyID.Text = "Company ID";
-            // 
-            // labelShippingCompany
-            // 
-            this.labelShippingCompany.AutoSize = true;
-            this.labelShippingCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelShippingCompany.Location = new System.Drawing.Point(179, 7);
-            this.labelShippingCompany.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelShippingCompany.Name = "labelShippingCompany";
-            this.labelShippingCompany.Size = new System.Drawing.Size(242, 31);
-            this.labelShippingCompany.TabIndex = 29;
-            this.labelShippingCompany.Text = "Shipping Company";
+            this.Tabs.Controls.Add(this.View);
+            this.Tabs.Controls.Add(this.Update);
+            this.Tabs.Location = new System.Drawing.Point(-2, 0);
+            this.Tabs.Name = "Tabs";
+            this.Tabs.SelectedIndex = 0;
+            this.Tabs.Size = new System.Drawing.Size(788, 464);
+            this.Tabs.TabIndex = 3;
             // 
             // ShippingCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 494);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonUpdate);
-            this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.labelSearch);
-            this.Controls.Add(this.textBoxCompanyName);
-            this.Controls.Add(this.labelCompanyName);
-            this.Controls.Add(this.textBoxCompanyID);
-            this.Controls.Add(this.labelCompanyID);
-            this.Controls.Add(this.labelShippingCompany);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.Tabs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.Name = "ShippingCompany";
             this.Text = "ShippingCompany";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ShippingCompany_FormClosed);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.Update.ResumeLayout(false);
+            this.Update.PerformLayout();
+            this.View.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Tabs.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Label AddStatus;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label DeleteStatus;
+        private System.Windows.Forms.Button Delete;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TabPage Update;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.TabPage View;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBoxSearch;
-        private System.Windows.Forms.Label labelSearch;
-        private System.Windows.Forms.TextBox textBoxCompanyName;
-        private System.Windows.Forms.Label labelCompanyName;
-        private System.Windows.Forms.TextBox textBoxCompanyID;
-        private System.Windows.Forms.Label labelCompanyID;
-        private System.Windows.Forms.Label labelShippingCompany;
+        private System.Windows.Forms.Button Refresh;
+        private System.Windows.Forms.TabControl Tabs;
     }
 }

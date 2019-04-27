@@ -43,7 +43,7 @@ namespace DatabaseProject
             queryString = query;
         }
 
-        public void addData(String query, SqlParameter[] parameters)
+        public int addData(String query, SqlParameter[] parameters)
         {
 
             queryString = query;
@@ -56,12 +56,15 @@ namespace DatabaseProject
                     sqlquery.Parameters.Add(parameters[i]);
                 }
 
-                sqlquery.ExecuteNonQuery();
+                int changed = sqlquery.ExecuteNonQuery();
                 connection.Close();
+                return changed;
             }
+
+            
         }
 
-        public void deleteData(String query, SqlParameter parameter)
+        public int deleteData(String query, SqlParameter parameter)
         {
             queryString = query;
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -69,8 +72,9 @@ namespace DatabaseProject
                 connection.Open();
                 SqlCommand sqlquery = new SqlCommand(queryString, connection);
                 sqlquery.Parameters.Add(parameter);
-                sqlquery.ExecuteNonQuery();
+                int changed = sqlquery.ExecuteNonQuery();
                 connection.Close();
+                return changed;
             }
         }
 
