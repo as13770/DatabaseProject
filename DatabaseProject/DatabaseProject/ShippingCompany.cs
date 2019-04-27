@@ -86,7 +86,8 @@ namespace DatabaseProject
                 DeleteStatus.Text = "";
                 String query = "DELETE FROM " + tableName + " WHERE CompanyID = @CompanyID";
                 SqlParameter parameter = new SqlParameter("@CompanyID", textBox3.Text);
-                textBox3.Text = "Rows changed: " + dc.deleteData(query, parameter);
+                DeleteStatus.Text = "Rows changed: " + dc.deleteData(query, parameter);
+                textBox3.Text = "";
                 initializeData();
             }
         }
