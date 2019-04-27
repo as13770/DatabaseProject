@@ -73,12 +73,6 @@
     <Compile Include="ContainerVersion.Designer.cs">
       <DependentUpon>ContainerVersion.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrewManifest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CrewManifest.Designer.cs">
-      <DependentUpon>CrewManifest.cs</DependentUpon>
-    </Compile>
     <Compile Include="DatabaseConnector.cs" />
     <Compile Include="HomeScreen.cs">
       <SubType>Form</SubType>
@@ -171,9 +165,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ContainerVersion.resx">
       <DependentUpon>ContainerVersion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrewManifest.resx">
-      <DependentUpon>CrewManifest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeScreen.resx">
       <DependentUpon>HomeScreen.cs</DependentUpon>
